@@ -114,6 +114,16 @@
             bindings = <&kp SEMICOLON>;
             key-positions = <28 29>;
         };
+
+        pipe {
+            bindings = <&kp LS(NON_US_BACKSLASH)>;
+            key-positions = <9 8>;
+        };
+
+        backslash {
+            bindings = <&kp NON_US_BACKSLASH>;
+            key-positions = <18 19>;
+        };
     };
 
     macros {
