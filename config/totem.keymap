@@ -122,7 +122,7 @@
 
         backslash {
             bindings = <&kp NON_US_BACKSLASH>;
-            key-positions = <18 19>;
+            key-positions = <29 30>;
         };
     };
 
