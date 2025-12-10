@@ -116,13 +116,18 @@
         };
 
         pipe {
-            bindings = <&kp LS(NON_US_BACKSLASH)>;
+            bindings = <&kp LS(BACKSLASH)>;
             key-positions = <8 9>;
         };
 
         backslash {
-            bindings = <&kp NON_US_BACKSLASH>;
+            bindings = <&kp BACKSLASH>;
             key-positions = <29 30>;
+        };
+
+        reset_power-on {
+            bindings = <&sys_reset>;
+            key-positions = <20 32>;
         };
     };
 
