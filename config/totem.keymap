@@ -146,6 +146,13 @@
                 <&macro_tap>,
                 <&kp G &kp I &kp F>;
         };
+
+        Code: Code {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LS(X))>;
+            label = "CODE";
+        };
     };
 
     keymap {
@@ -170,10 +177,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-              &mt LG(LS(NUMBER_4)) Q  &kp W             &kp E         &kp R             &kp T        &kp Y        &kp U          &kp I        &kp O             &mt SEMICOLON LS(SEMICOLON)
-              &mt LCTRL A             &mt LEFT_SHIFT S  &kp D         &kp F             &kp G        &kp H        &kp J          &kp K        &mt LEFT_SHIFT L  &mt LCTRL P
-&kp LC(LEFT)  &kp Z                   &kp X             &kp C         &kp V             &kp B        &kp N        &kp M          &kp COMMA    &kp DOT           &kp FSLH                     &kp LC(RIGHT)
-                                                        &kp LEFT_ALT  &kp LEFT_COMMAND  &lt 1 TAB    &lt 2 SPACE  &kp BACKSPACE  &lt 3 ENTER
+                  &mt LG(LS(NUMBER_4)) Q  &kp W             &kp E         &kp R             &kp T        &kp Y        &kp U          &kp I        &kp O             &mt SEMICOLON LS(SEMICOLON)
+                  &lt 4 A                 &mt LEFT_SHIFT S  &kp D         &kp F             &kp G        &kp H        &kp J          &kp K        &mt LEFT_SHIFT L  &mt LCTRL P
+&kp LEFT_CONTROL  &kp Z                   &kp X             &kp C         &kp V             &kp B        &kp N        &kp M          &kp COMMA    &kp DOT           &kp FSLH                     &kp LA(TAB)
+                                                            &kp LEFT_ALT  &kp LEFT_COMMAND  &lt 1 TAB    &lt 2 SPACE  &kp BACKSPACE  &lt 3 ENTER
             >;
         };
 
@@ -216,6 +223,15 @@
            &bootloader  &bt BT_NXT  &trans        &trans  &bt BT_SEL 1    &kp LC(UP_ARROW)    &kp F4  &kp F5  &kp F6  &kp F11
 &soft_off  &trans       &bt BT_PRV  &trans        &trans  &bt BT_SEL 2    &kp LC(DOWN_ARROW)  &kp F1  &kp F2  &kp F3  &kp F10  &trans
                                     &trans        &trans  &trans          &trans              &trans  &trans
+            >;
+        };
+
+        app_layer {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
