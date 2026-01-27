@@ -153,6 +153,69 @@
             bindings = <&kp LA(LS(X))>;
             label = "CODE";
         };
+
+        iterm: iterm {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LS(S))>;
+            label = "ITERM";
+        };
+
+        Chrome: Chrome {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LS(W))>;
+            label = "CHROME";
+        };
+
+        Ray: Ray {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LS(R))>;
+            label = "RAY";
+        };
+
+        CocPilot: CocPilot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LS(A))>;
+            label = "COCPILOT";
+        };
+
+        Obsidian: Obsidian {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LS(O))>;
+            label = "OBSIDIAN";
+        };
+
+        Postman: Postman {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LS(P))>;
+            label = "POSTMAN";
+        };
+
+        TablePlus: TablePlus {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LS(T))>;
+            label = "TABLEPLUS";
+        };
+
+        Finder: Finder {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LS(F))>;
+            label = "FINDER";
+        };
+
+        Brave: Brave {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LS(B))>;
+            label = "BRAVE";
+        };
     };
 
     keymap {
@@ -228,8 +291,17 @@
 
         app_layer {
             bindings = <
+        &trans  &CocPilot  &Finder     &Ray      &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &iterm     &Chrome     &Code     &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &Brave     &TablePlus  &Postman  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                           &trans      &trans    &trans    &trans  &trans  &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
         &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &Code   &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
