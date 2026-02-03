@@ -291,10 +291,10 @@
 
         app_layer {
             bindings = <
-        &trans  &CocPilot  &Finder     &Ray      &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &iterm     &Chrome     &Code     &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &Brave     &TablePlus  &Postman  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                           &trans      &trans    &trans    &trans  &trans  &trans
+        &trans  &CocPilot  &Finder     &Ray      &trans           &trans  &trans  &trans  &trans  &trans
+        &trans  &iterm     &Chrome     &Code     &kp LC(RIGHT)    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &Brave     &TablePlus  &Postman  &kp LC(LEFT)     &trans  &trans  &trans  &trans  &trans  &trans
+                           &trans      &trans    &trans           &trans  &trans  &trans
             >;
         };
 
